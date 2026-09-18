@@ -10,3 +10,5 @@ For our project, we shd have branches for: main.py io_manager.py ai_manager.py l
 
 
 hello nigag
+
+i wrote smth and pushed to branch JK
