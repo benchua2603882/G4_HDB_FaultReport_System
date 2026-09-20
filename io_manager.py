@@ -23,3 +23,14 @@ def show_goodbye():
     """Display a goodbye message when the user exits."""
 
     print("Goodbye!")
+
+
+
+def process_new_report():
+    return
+
+
+
+
+def view_reports():
+    return

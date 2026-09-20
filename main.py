@@ -16,11 +16,11 @@ def main():
 
         elif choice == "1":
             # Run the complaint submission workflow.
-            process_new_report()
+            io_manager.process_new_report()
 
         elif choice == "2":
             # Retrieve and display saved reports.
-            view_reports()
+            io_manager.view_reports()
 
 
 # Start the application only when this file is run directly.
