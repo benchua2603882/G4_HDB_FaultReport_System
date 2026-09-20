@@ -30,7 +30,23 @@ def process_new_report():
     return
 
 
-
-
 def view_reports():
     return
+
+
+def collect_complaint():
+    """Prompt for a complaint and reject empty input."""
+
+    while True:
+        complaint = input("\nDescribe your complaint: ").strip()
+
+        if complaint:
+            return complaint
+
+        print("Complaint cannot be empty. Please try again.")
+
+
+def show_message(message):
+    """Display a message to the user."""
+
+    print(message)
