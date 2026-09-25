@@ -16,14 +16,18 @@ client = genai.Client()
 
 # 3. Handle the resident's input (Text + Optional Image)
 resident_description = "YOO THERE IS A GHOST IN MY CONDO MY BALLS ARE SHIVERING IN THEIR TIMBERS"
-image_path = "C:/Users/jkk/.vscode/DevOps Project/G4_HDB_FaultReport_System/ghost.jpg"
+image_paths = [
+    "C:/Users/Admin/.vscode/G4_HDB_FaultReport_System/ghost2.jpg",
+    "C:/Users/Admin/.vscode/G4_HDB_FaultReport_System/ghost2.jpg",
+]
 
 contents = [f"Resident description: {resident_description}"]
 
 # Only append the image if it actually exists, satisfying the "(optional)" requirement
-if os.path.exists(image_path):
-    img = Image.open(image_path)
-    contents.append(img)
+for path in image_paths:
+    if os.path.exists(path):
+        img = Image.open(path)
+        contents.append(img)
 
 # 4. Define the AI's role and constraints
 system_instruction = """
