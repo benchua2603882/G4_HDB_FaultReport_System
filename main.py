@@ -29,6 +29,7 @@ def main():
             # Collect a complaint and add it to the list.
             complaint = process_new_report()
             complaints.append(complaint)
+            """the complaints[] array now stored the data and is ready to be sent to ai_manager below."""
 
         elif choice == "2":
             # Display complaints collected during this run.
